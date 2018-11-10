@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FAQ</title>
+         <style type="text/css">
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 max-width: 319px;
+                 font-family: "Arial", sans-serif;
+                 font-size: 14px;
+                 background: #f9f9f9;
+             }
+        h1 {
+            text-align: center;
+            }
+             .list {
+                 display: flex;
+                 justify-content: center;
+             }
+             ul {
+                 display:inline-block;
+                 width: 85%;
+                 padding: 0;
+             }
+             li {
+                 list-style: none;
+                 margin: 0;
+                 margin-bottom: 10px;
+             }
+             .question, .answer {
+                 border: 1px solid #d6d6d6;
+                 padding: 10px;
+                 position: relative;
+             }
+             .question {
+                 cursor: pointer;
+                 background: #f9f9f9;
+             }
+             .answer {
+                 color: #777777;
+                 background: #f9f9f9;
+                 display:block;
+                 height: 0px;
+                 overflow: hidden;
+                 padding: 0px;
+                 /*padding-left: 10px;*/
+                 border: 0px;
+             }
+             .question:before {
+                 content:"+";
+                 display: inline-block;
+                 padding-right: 5px;
+             }
+             .opened {
+                 animation-name: white;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .closed {
+                 animation-name: gray;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .opened + .answer {
+                 animation-name: answering;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .closed + .answer {
+                 animation-name: non-aswering;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .opened:before {
+                 animation-name: open;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .closed:before {
+                 animation-name: close;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             .closed:active + div {
+                 animation-name: active;
+                 animation-duration: 0.2s;
+                 animation-fill-mode: forwards;
+             }
+             }
+             @keyframes active {
+                 0% {
+                     height: 0px;
+                     font-size: 0px;
+                 }
+                 100% {
+                     height: inherit;
+                     font-size: 1em;
+                 }
+             }
+             @keyframes white {
+                 0% {
+                     background: #f9f9f9;
+                 }
+                 100% {
+                     background: #fff;
+                 }
+             }
+             @keyframes gray {
+                 0% {
+                     background: #fff;
+                 }
+                 100% {
+                     background: #f9f9f9;
+                 }
+             }
+             @keyframes open {
+                 0% {
+                     transform: rotate(0deg);
+                     transform-origin: 30% center;
+                 }
+                 100% {
+                     transform: rotate(45deg);
+                     transform-origin: 30% center;
+                 }
+             }
+             @keyframes close {
+                 0% {
+                     transform: rotate(45deg);
+                     transform-origin: 30% center;
+                 }
+                 100% {
+                     transform: rotate(0deg);
+                     transform-origin: 30% center;
+                 }
+             }
+             @keyframes answering {
+                 0% {
+                     height: 0px;
+                     padding: 0px;
+                 }
+                 100% {
+                     height: auto;
+                     padding: 10px 10px;
+                     border: 1px solid #d6d6d6;
+                     border-top: 0px;
+                 }
+             }
+             @keyframes non-aswering {
+                 0% {
+                     height: auto;
+                     /*overflow: visible;*/
+                     padding: 10px 10px;
+                     border: 1px solid #d6d6d6;
+                     border-top: 0px;
+                 }
+                 100% {
+                      height: 0px;
+                     /*overflow: hidden;*/
+                     padding: 0px;
+                 }
+             }
+             @media all and (max-width: 568px) {
+                 html, body {
+                 max-width: 567px;
+                 }
+             }
+             @media all and (max-width: 320px) {
+                 html, body {
+                     max-width: 319px;
+                 }
+             }
+             @media all and (max-width: 1366px) {
+                 html, body {
+                     max-width: 1365px;
+                 }
+             }
+             @media all and (max-width: 1024px) {
+                 html, body {
+                     max-width: 1005px;
+                 }
+             }
+             @media all and (max-width: 1280px) {
+                 html, body {
+                     max-width: 1260px;
+                 }
+             }
+        </style>
+    </head>
+    <body>
+        <h1>FAQ</h1>
+        <div class = list>
+        <ul>
+            <li><div class = "question closed" >Сколько стоит вызов замерщика?</div>
+                <div class = "answer passive">Выезд сметчика-замерщика осуществляется абсолютно бесплатно.</div></li>
+            <li><div class = "question closed">Как быстро вы приступаете к работе?</div>
+                <div class = "answer passive">В общем случае координирование работ отнимает 2–3 дня.</div></li>
+            <li><div class = "question closed">Сколько будет стоить ремонт квартиры 34м<sup>2</sup> с лоджией?</div>
+            <div class = "answer passive">На нашем сайте есть специальный «калькулятор». Вам потребуется заполнить предложенные поля. После этого вы получите предварительный расчёт цены работ и материалов. Если предложение вас устраивает, остаётся только указать контактные данные и дождаться звонка специалиста. Но окончательную сумму вам скажет замерщик после комплексного осмотра объекта.</div></li>
+            <li><div class = "question closed">Как оплачиваются ваши услуги?</div>
+                <div class = "answer passive">Работы начинаются без авансов и предоплат. Оплата происходит поэтапно по фактически выполненным работам, которые задокументированы актом.</div></li>
+            <li><div class = "question closed">Сколько времени понадобится на отделку квартиры?</div>
+            <div class = "answer passive">Время проведения работ напрямую зависит от сложности ремонта. Ориентировочные сроки по сметной стоимости такие: до 120 тр – 2-3 недели , до 200тр -3-4 недели, 400-600тр – 7-8 недель.</div></li>
+            <li><div class = "question closed">Даёте ли вы гарантию?</div><div class = "answer passive">Гарантийные обязательства по договору составляют 3 года.</div></li>
+            <li><div class = "question closed">Может ли сметная сумма измениться во время ремонта?</div>
+                <div class = "answer passive">Стоимость работ по смете неизменна. Дополнительные расходы могут появиться в случае демонтажных работ , которые согласовываются с заказчиком или если клиент захотел добавить или поменять перечень работ.</div></li>
+            <li><div class = "question closed">Выносите ли вы мусор?</div><div class = "answer passive">Наша компания осущестляет вынос мусора совершенно бесплатно.</div></li>
+            <li><div class = "question closed">Как происходит закупка материалов для ремонта?</div>
+                <div class = "answer passive">Мы работаем с проверенными поставщиками черновых и чистовых материалов, поэтому процесс закупки Вы можете возложить на нас.</div></li>
+            <li><div class = "question closed">Возможна ли оплата в безналичном расчете?</div>
+                <div class = "answer passive">Да, возможна.</div></li>
+            <li><div class = "question closed">Работаете ли вы за пределами МКАД?</div>
+                <div class = "answer passive">Конечно, мы выезжаем в ближнее Подмосковье.</div></li>
+            <li><div class = "question closed">Сотрудники какой национальности у вас работают?</div>
+                <div class = "answer passive">Все сотрудники компании –граждане РФ и РБ.</div></li></ul>
+        </div>
+        <script type="text/javascript">
+            var questionCollection = document.getElementsByClassName('closed');
+            for(var i = 0; i < questionCollection.length; i++) {
+    var question = questionCollection[i];
+    question.addEventListener("click", function(){
+        this.classList.toggle("closed");
+        this.classList.toggle("opened");
+    }
+)}
+    </script>
+    </body>
+</html>

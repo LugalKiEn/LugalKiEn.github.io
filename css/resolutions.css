@@ -479,8 +479,8 @@
              }
              @media all and (min-width: 1367px) and (max-width: 1440px) {
                  html, body {
-                     max-width: 1424px;
-                     font-size: 2rem; 
+                     max-width: 1440px;
+                     font-size: 1.8rem; 
                  }
                 .background {
                      min-height: 1040px;

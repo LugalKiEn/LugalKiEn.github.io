@@ -1,250 +1,118 @@
 <!DOCTYPE HTML>
 <html lang = "ru">
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>FAQ</title>
-         <style>
-             html, body {
-                 margin: 0;
-                 padding: 0;
-                 max-width: 319px;
-                 font-family: "Arial", sans-serif;
-                 font-size: 14px;
-                 background: #f9f9f9;
-             }
-        h1 {
-            text-align: center;
+        <link rel = stylesheet href ="css/main.css">
+        <link rel = stylesheet href = "css/fonts.css">
+        <link rel = stylesheet href = "css/wickedcss.css">
+        <link rel = stylesheet href = "css/resolutions.css">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type = text/javascript src="js/script.js"></script>
+        <title>Калькулятор ИМТ</title>
+      </head>
+      <body>
+          <header>
+            <div class = background>
+                <div class = menu>
+                    <ul>
+                    <li><button>Домой</button></li>
+                    <li><button>Калькулятор</button></li>
+                    <li><button>Другие калькуляторы</button></li>
+                        <li><button>Статья</button></li>
+                    <li><button>Сервис</button></li>
+                    </ul>
+                </div>
+              <div class = header-text>
+              <h1>Калькулятор ИМТ / Расчёт Индекса Массы Тела</h1>
+            </div>
+            </div>
+          </header>
+          <h2>Что такое индекс массы тела?</h2>
+          <section class = beginning id="beginning">
+            <article class="start-image" id = "start-image">
+                <img src="img/start.jpg" alt="start" class = start style="width: 100%">
+            </article>
+            <article class="start-text" id = "start-text">
+              <p>Индекс Массы Тела (ИМТ, англ. Body Mass Index или BMI) является Мерой Оценки Веса.
+                Он вычисляется как Масса Тела, деленная на Квадрат Роста Тела.
+                Ниже Вы найдете правильную Формулу и более подробную информацию о ИМТ и Потери Веса.
+                Для Культуристов с очень высокой мышечной массой, этот Тест не подходит для вычисления ИМТ,
+                потому что есть просчет. В этом случае, мы рекомендуем вам измерять процент жира вашего тела,
+                лучше всего с помощью врача или хорошей шкале жира.<p>
+            </article>
+          </section>
+            <h2>ИМТ - Индекс Массы Тела</h2>
+            <section class = continue id="continue">
+              <article class = "continue-text" id = "continue-text">
+                <p>Индекс массы тела, сокращенно ИМТ, является важным показателем для ученых и врачей.
+                  Многие люди уже имели дело с этим показателем, вольно или невольно.
+                  ИМТ оценивает вес человеческого тела и был обнаружен Адольфом Кетле (Adolphe Quetelet).
+                  Основным преимуществом индекса является указать и предупредить о возможном избыточном весе.
+                  Глобально, риск избыточного веса у людей увеличивается с невероятной скоростью.
+                  Индекс Масса Тела учитывает вес индивидуума, но не состав его мышечной и жировой ткани.
+                  Этот показатель вычисляется очень просто. Фактический Вес, деленный на Рост в квадрате.
+                  Это вычисление приводит к рядукоторый обеспечивает нам информацию о Весе. Калькулятор ИМТ для Женщин /
+                  Мужчин предоставляется для бесплатно, как и вышеуказанная Таблица ИМТ.</p>
+              </article>
+              <article class="continue-image" id = "continue-image">
+                <img src="img/calculator_imt.jpg" alt="calculator" style="width: 100%">
+              </article>
+          </section>
+           <section class = ending id="ending">
+            <article class="end-image " id = "end-image">
+                <img src="img/statia_imt.jpg" alt="end" class = end style="width: 100%">
+            </article>
+            <article class="end-text" id = "end-text">
+              <p>Если индекс массы тела находится под 19, человек страдает недостаточным весом, 19-25 - у человека абсолютно нормальный вес. При ИМТ более 25 Осторожность является оправданной и определяеться небольшая тенденция к ожирению. Очень осторожно нужно относиться к цифре 30, которая уже определяет Ожирение. ИМТ учитывает возраст соответствующего лица. Кроме того, Пол играет важную роль. ИМТ значительно выше у мужчин, чем у женщин, что можно объяснить тем что у мужчин больше мышечная масса чем у женщин. Особенно у детей и подростков, важно непрерывное наблюдение за весом. Многие в раннем возрасте, как правило, имеют слегка избыточный вес, что отрицательно скажется на костях и развитие.<p>
+            </article>
+          </section>
+          <section class = "calculator" id = "calculator">
+              <h3>Калькулятор ИМТ</h3>
+              <p>Введите свой рост и вес в <span>указанные</span> поля:</p>
+          <form>
+              <div class = height-section>
+                <label for = "height" name = "height">Рост, в см:</label><br>
+                <input type="number" id = height />
+              </div>
+              <div class = weight-section>
+                <label for = "weight" name = "height">Вес, в кг:</label><br>
+                <input type="number" id = weight />                 
+              </div>
+              <input type = "submit" onclick="calculate()" />
+          </form>
+          </section>
+          <footer>
+            <p>Есть вопрос?</p>
+            <a class = "social-btn social-btn-vk" href = #>Вконтакте</a>
+            <a class = "social-btn social-btn-ok" href = #>Одноклассники</a>
+            <a class = "social-btn social-btn-yt" href = #>YouTube</a>
+            <a class = "social-btn social-btn-in" href = #>Инстаграмм</a>
+            <button class = btn-up></button>
+          </footer>
+          <script type="text/javascript">
+            function calculate() {
+                var height = document.getElementById("height").value;
+                var weight = document.getElementById("weight").value;
+                if (!weight || !height) {
+                    alert("Вы не ввели все или недостаточно данных. Повторите попытку");
+                } else {
+                var coefficient = Math.round(weight * 10000 / (height * height));
+                var partOfMessage = "";
+                if (coefficient < 20) {
+                    partOfMessage = " - недобор веса. Срочно обратитесь к врачу";
+                } else if (coefficient >= 20 && coefficient <= 25) {
+                    partOfMessage = " - нормальный вес.";
+                } else if (coefficient >= 26 && coefficient <= 30){
+                    partOfMessage = " - избыточный вес. Рекомендуем обратиться к врачу";
+                } else if (coefficient >= 31 && coefficient <= 40) {
+                     partOfMessage = " - ожирение. Рекомендуем обратиться к врачу";
+                } else if (coefficient >40) {
+                    partOfMessage = " - тяжелое ожирение. Срочно  обратитесь к врачу";
+                }
+                alert("Ваш ИМТ составил " + coefficient + partOfMessage);
             }
-             .list {
-                 display: flex;
-                 justify-content: center;
-             }
-             ul {
-                 display:inline-block;
-                 width: 85%;
-                 padding: 0;
-             }
-             li {
-                 list-style: none;
-                 margin: 0;
-                 margin-bottom: 10px;
-             }
-             .question, .answer {
-                 border: 1px solid #d6d6d6;
-                 padding: 10px;
-                 position: relative;
-             }
-             .question {
-                 cursor: pointer;
-                 background: #f9f9f9;
-             }
-             .answer {
-                 color: #777777;
-                 background: #f9f9f9;
-                 display:block;
-                 height: 0px;
-                 overflow: hidden;
-                 padding: 0px;
-                 padding-left: 10px;
-                 border: 0px;
-             }
-             .question:before {
-                 content:"+";
-                 display: inline-block;
-                 padding-right: 5px;
-             }
-             .opened {
-                 animation-name: white;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             .closed {
-                 animation-name: gray;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             .opened + .answer {
-                 animation-name: answering;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             .closed + .answer {
-                 animation-name: non-aswering;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             .opened:before {
-                 animation-name: open;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             .closed:before {
-                 animation-name: close;
-                 animation-duration: 0.5s;
-                 animation-fill-mode: forwards;
-             }
-             @keyframes white {
-                 0% {
-                     background: #f9f9f9;
-                 }
-                 100% {
-                     background: #fff;
-                 }
-             }
-             @keyframes gray {
-                 0% {
-                     background: #fff;
-                 }
-                 100% {
-                     background: #f9f9f9;
-                 }
-             }
-             @keyframes open {
-                 0% {
-                     transform: rotate(0deg);
-                     transform-origin: 30% center;
-                 }
-                 100% {
-                     transform: rotate(45deg);
-                     transform-origin: 30% center;
-                 }
-             }
-             @keyframes close {
-                 0% {
-                     transform: rotate(45deg);
-                     transform-origin: 30% center;
-                 }
-                 100% {
-                     transform: rotate(0deg);
-                     transform-origin: 30% center;
-                 }
-             }
-             @keyframes answering {
-                 0% {
-                     height: 0px;
-                     padding: 0px;
-                     padding-left: 10px;
-                 }
-                 100% {
-                     height: auto;
-                     padding: 10px 10px;
-                     border: 1px solid #d6d6d6;
-                     border-top: 0px;
-                 }
-             }
-             @keyframes non-aswering {
-                 0% {
-                     height: auto;
-                     padding: 10px 10px;
-                     border: 1px solid #d6d6d6;
-                     border-top: 0px;
-                 }
-                 100% {
-                      height: 0px;
-                     padding: 0px;
-                     padding-left: 10px;
-                 }
-             }
-             @media all and (max-width: 568px) {
-                 html, body {
-                 max-width: 552px;
-                 }
-             }
-             @media all and (max-width: 320px) {
-                 html, body {
-                     max-width: 304px;
-                 }
-             }
-             @media all and (max-width: 1366px) {
-                 html, body {
-                     max-width: 1350px;
-                 }
-             }
-             @media all and (max-width: 1024px) {
-                 html, body {
-                     max-width: 1008px;
-                 }
-             }
-             @media all and (max-width: 1280px) {
-                 html, body {
-                     max-width: 1260px;
-                 }
-             }
-             @media all and (min-width: 1367px) and (max-width: 1440px) {
-                 html, body {
-                     max-width: 1400px;
-                     font-size: 1.05rem
-                 }
-             }
-             @media all and (min-width: 1440px) and (max-width: 1600px) {
-                 html, body {
-                     max-width: 1540px;
-                     font-size: 1.17rem;
-                 }
-             }
-             @media all and (min-width: 1600px) and (max-width: 1680px) {
-                 html, body {
-                     max-width: 1600px;
-                     font-size: 1.225rem;
-                 }
-             }
-             @media all and (min-width: 1680px) and (max-width: 1920px) {
-                 html, body {
-                     max-width: 1820px;
-                     font-size: 1.4rem;
-                 }
-             }
-             @media all and (min-width: 1920px) and (max-width: 2048px) {
-                 html, body {
-                     max-width: 1928px;
-                     font-size: 1.5rem;
-                 }
-             }
-             @media all and (min-width: 2048px) and (max-width: 2560px) {
-                 html, body {
-                     max-width: 2420px;
-                     font-size: 1.87rem;
-                 }
-             }
-        </style>
-    </head>
-    <body>
-        <h1>FAQ</h1>
-        <div class = list>
-        <ul>
-            <li><div class = "question closed" >Сколько стоит вызов замерщика?</div>
-                <div class = "answer">Выезд сметчика-замерщика осуществляется абсолютно бесплатно.</div></li>
-            <li><div class = "question closed">Как быстро вы приступаете к работе?</div>
-                <div class = "answer">В общем случае координирование работ отнимает 2–3 дня.</div></li>
-            <li><div class = "question closed">Сколько будет стоить ремонт квартиры 34м<sup>2</sup> с лоджией?</div>
-            <div class = "answer">На нашем сайте есть специальный «калькулятор». Вам потребуется заполнить предложенные поля. После этого вы получите предварительный расчёт цены работ и материалов. Если предложение вас устраивает, остаётся только указать контактные данные и дождаться звонка специалиста. Но окончательную сумму вам скажет замерщик после комплексного осмотра объекта.</div></li>
-            <li><div class = "question closed">Как оплачиваются ваши услуги?</div>
-                <div class = "answer">Работы начинаются без авансов и предоплат. Оплата происходит поэтапно по фактически выполненным работам, которые задокументированы актом.</div></li>
-            <li><div class = "question closed">Сколько времени понадобится на отделку квартиры?</div>
-            <div class = "answer">Время проведения работ напрямую зависит от сложности ремонта. Ориентировочные сроки по сметной стоимости такие: до 120 тр – 2-3 недели , до 200тр -3-4 недели, 400-600тр – 7-8 недель.</div></li>
-            <li><div class = "question closed">Даёте ли вы гарантию?</div><div class = "answer">Гарантийные обязательства по договору составляют 3 года.</div></li>
-            <li><div class = "question closed">Может ли сметная сумма измениться во время ремонта?</div>
-                <div class = "answer">Стоимость работ по смете неизменна. Дополнительные расходы могут появиться в случае демонтажных работ , которые согласовываются с заказчиком или если клиент захотел добавить или поменять перечень работ.</div></li>
-            <li><div class = "question closed">Выносите ли вы мусор?</div><div class = "answer">Наша компания осущестляет вынос мусора совершенно бесплатно.</div></li>
-            <li><div class = "question closed">Как происходит закупка материалов для ремонта?</div>
-                <div class = "answer">Мы работаем с проверенными поставщиками черновых и чистовых материалов, поэтому процесс закупки Вы можете возложить на нас.</div></li>
-            <li><div class = "question closed">Возможна ли оплата в безналичном расчете?</div>
-                <div class = "answer">Да, возможна.</div></li>
-            <li><div class = "question closed">Работаете ли вы за пределами МКАД?</div>
-                <div class = "answer">Конечно, мы выезжаем в ближнее Подмосковье.</div></li>
-            <li><div class = "question closed">Сотрудники какой национальности у вас работают?</div>
-                <div class = "answer">Все сотрудники компании –граждане РФ и РБ.</div></li></ul>
-        </div>
-        <script type="text/javascript">
-            var questionCollection = document.getElementsByClassName('closed');
-            for(var i = 0; i < questionCollection.length; i++) {
-    var question = questionCollection[i];
-    question.addEventListener("click", function(){
-        this.classList.toggle("closed");
-        this.classList.toggle("opened");
-    }
-)}
-    </script>
-    </body>
-</html>
+            }
+          </script>
+      </body>
+  </html>

@@ -1,0 +1,552 @@
+            @media all and (max-width: 240px) {
+                 html, body {
+                 max-width: 224px;
+                 font-size: 0.8rem; 
+                 }
+                .background {
+                     min-height: 170px;
+                     background-size: contain;
+                     margin-bottom: 0px;
+                 }
+                 button {
+                     font-size: 0.5rem;
+                     height: 25px;
+                 }
+                ul li:nth-child(2), ul li:nth-child(3) {
+                    justify-content: flex-start;            
+                } 
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 1.2rem;
+                 }
+                h2 {
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                }
+                 body h2:last-of-type {
+                    margin-top: -20px;
+                }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+             }            
+            @media all and (min-width: 481px) and (max-width: 568px) {
+                 html, body {
+                 max-width: 552px;
+                 font-size: 0.8rem; 
+                 }
+                .background {
+                     min-height: 320px;
+                     background-size: contain;
+                     margin-bottom: 30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 1.8rem;
+                 }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+             }
+             @media all and (min-width: 569px) and (max-width: 768px) {
+                 html, body {
+                 max-width: 764px;
+                 font-size: 0.8rem; 
+                 }
+                .background {
+                     min-height: 440px;
+                     background-size: contain;
+                     margin-bottom: 30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 2.5rem;
+                 }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+             }
+             @media all and (min-width: 241px) and (max-width: 320px) {
+                 html, body {
+                     max-width: 303px;
+                     font-size: 0.6rem;
+                 }
+                 .background {
+                     min-height: 230px;
+                     background-size: contain;
+                     margin-bottom: 0px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                    margin-top: -30px;
+                     font-size: 1.6rem;
+                 }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+
+             }
+              @media all and (min-width: 321px) and (max-width: 480px) {
+                 html, body {
+                     max-width: 464px;
+                     font-size: 0.8rem;
+                 }
+                 .background {
+                     min-height: 270px;
+                     background-size: contain;
+                     margin-bottom: 25px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                    margin-top: -30px;
+                     font-size: 1.6rem;
+                 }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+
+             }           
+             @media all and (min-width: 769px) and (max-width: 1024px) {
+                 html, body {
+                 max-width: 1024px;
+                 font-size: 1rem; 
+                 }
+                .background {
+                     min-height: 620px;
+                     background-size: contain;
+                     margin-bottom: 30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 2.5rem;
+                 }
+                 ul li:first-child button::before {
+                     display:none;
+                 }
+                 ul li:nth-child(2n) button::after {
+                     display: none;
+                 }
+                 button {
+                     height:50px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     width: 100%;
+                     height: auto;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     padding-top: 20px;
+                 }
+                 .continue {
+                     flex-direction: column-reverse;
+                     height: auto;
+                 }
+                 .start-image, .continue-image, .end-image { 
+                     float: none;
+                     width: 70%;
+                     margin-left: auto;
+                     margin-right: auto;
+                 }
+                 .start-text, .continue-text, .end-text {
+                     float: none;
+                     width: 75%;
+                     margin-left: auto;
+                     margin-right:auto;
+                     font-size: 1.2rem;
+                 }
+                 .btn-up {
+                     display: none;
+                 }
+                 h3 {
+                     padding-top: 0px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 20px;
+                    font-size: 1.5em;
+                 }
+                 input[type = "submit"] {
+                     width: 100px;
+                     height: 25px;
+                     margin-bottom: 20px;
+                 }
+             }
+             @media all and (min-width: 1025px) and (max-width: 1280px) {
+                 html, body {
+                     max-width: 1264px;
+                     font-size: 1rem; 
+                 }
+                .background {
+                     min-height: 780px;
+                     background-size: contain;
+                     margin-bottom: 30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 2.5rem;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     height: 500px;
+                 }
+                 .calculator {
+                     height: 400px;
+                 }
+                 h3 {
+                     padding-top: 20px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 30px;
+                    font-size: 1.75em;
+                 }
+                 input[type = "submit"] {
+                     width: 150px;
+                     height: 38px;
+                     margin-bottom: 20px;
+                 }
+             }
+             @media all and (min-width: 1367px) and (max-width: 1440px) {
+                 html, body {
+                     max-width: 1400px;
+                     font-size: 2rem; 
+                 }
+                .background {
+                     min-height: 780px;
+                     background-size: contain;
+                     margin-bottom: 30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                 }
+                 h1 {
+                     margin-top: -30px;
+                     font-size: 2.5rem;
+                 }
+                 button {
+                     height:35px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     height: 500px;
+                 }
+                 .calculator {
+                     height: 400px;
+                 }
+                 h3 {
+                     padding-top: 20px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 30px;
+                    font-size: 1.75em;
+                 }
+                 input[type = "submit"] {
+                     width: 150px;
+                     height: 38px;
+                     margin-bottom: 20px;
+                 }
+             }
+             @media all and (min-width: 1440px) and (max-width: 1600px) {
+                 html, body {
+                     max-width: 1540px;
+                     font-size: 1.17rem;
+                 }
+             }
+             @media all and (min-width: 1600px) and (max-width: 1680px) {
+                 html, body {
+                     max-width: 1600px;
+                     font-size: 1.225rem;
+                 }
+             }
+             @media all and (min-width: 1680px) and (max-width: 1920px) {
+                 html, body {
+                     max-width: 1820px;
+                     font-size: 1.4rem;
+                 }
+             }
+             @media all and (min-width: 1920px) and (max-width: 2048px) {
+                 html, body {
+                     max-width: 1928px;
+                     font-size: 1.5rem;
+                 }
+             }
+             @media all and (min-width: 2048px) and (max-width: 2560px) {
+                 html, body {
+                     max-width: 2420px;
+                     font-size: 1.87rem;
+                 }
+             }

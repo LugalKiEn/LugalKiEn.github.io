@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'RobotoSlabRegular';
+    src: url('../fonts/RobotoSlab/RobotoSlabRegular/RobotoSlab-Regular-webfont.eot');
+    src: url('../fonts/RobotoSlab/RobotoSlabRegular/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoSlab/RobotoSlabRegular/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('../fonts/RobotoSlab/RobotoSlabRegular/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoSlab/RobotoSlabRegular/RobotoSlab-Regular-webfont.svg#cuprumffuregular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoSlabBold';
+    src: url('../fonts/RobotoSlab/RobotoSlabBold/RobotoSlab-Bold-webfont.eot');
+    src: url('../fonts/RobotoSlab/RobotoSlabBold/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoSlab/RobotoSlabBold/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('../fonts/RobotoSlab/RobotoSlabBold/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoSlab/RobotoSlabBold/RobotoSlab-Bold-webfont.svg#cuprumffuregular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoSlabLight';
+    src: url('../fonts/RobotoSlab/RobotoSlabLight/RobotoSlab-Light-webfont.eot');
+    src: url('../fonts/RobotoSlab/RobotoSlabLight/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoSlab/RobotoSlabLight/RobotoSlab-Light-webfont.woff') format('woff'),
+         url('../fonts/RobotoSlab/RobotoSlabLight/RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoSlab/RobotoSlabLight/RobotoSlab-Light-webfont.svg#cuprumffuregular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoSlabThin';
+    src: url('../fonts/RobotoSlab/RobotoSlabThin/RobotoSlab-Thin-webfont.eot');
+    src: url('../fonts/RobotoSlab/RobotoSlabThin/RobotoSlab-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoSlab/RobotoSlabThin/RobotoSlab-Thin-webfont.woff') format('woff'),
+         url('../fonts/RobotoSlab/RobotoSlabThin/RobotoSlab-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoSlab/RobotoSlabThin/RobotoSlab-Thin-webfont.svg#cuprumffuregular') format('svg');
+}
+@font-face {
+    font-family: 'Bitter';
+         src: url('../fonts/Bitter/Bitter.woff') format('woff'),
+         url('../fonts/Bitter/Bitter.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Raleway';
+         src: url('../fonts/Raleway/ralewayregular.woff') format('woff'),
+         url('../fonts/Raleway/ralewayregular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RalewayBold';
+         src: url('../fonts/Raleway/ralewaybold.woff') format('woff'),
+         url('../fonts/Raleway/ralewaybold.ttf') format('truetype');
+}

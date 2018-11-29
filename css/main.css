@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  max-width: 1349px;
+  /*max-width: 1349px;*/
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   color: #000;
@@ -18,7 +18,7 @@ html, body {
 .menu {
     width: 100%;
     position: fixed;
-        z-index: 99;
+    z-index: 99;
 }
 ul {
     margin: 0;
@@ -107,7 +107,7 @@ ul li:nth-child(2n) button::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
+    margin-left: 5%;
   }
   .start {
     display: flex;
@@ -127,18 +127,18 @@ ul li:nth-child(2n) button::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15%;
+    margin-right: 5%;
     font-size: 1.1rem;
     font-style: italic;
   }
 .continue-text {
   float: left;
   margin-right: 0;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 .continue-image {
 float: right;
-margin-right: 15%;
+margin-right: 5%;
 margin-left: 0;
 }
 .calculator {

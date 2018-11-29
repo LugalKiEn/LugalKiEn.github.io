@@ -477,6 +477,11 @@
                      margin-bottom: 20px;
                  }
              }
+             @media all and (min-width: 1281px) and (max-width: 1366px) {
+                 html, body {
+                     max-width: 1349px;
+                 }                
+             }
              @media all and (min-width: 1367px) and (max-width: 1440px) {
                  html, body {
                      max-width: 1440px;

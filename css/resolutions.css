@@ -1,6 +1,6 @@
             @media all and (max-width: 240px) {
                  html, body {
-                 max-width: 224px;
+                 max-width: 240px;
                  font-size: 0.8rem; 
                  }
                 .background {
@@ -79,7 +79,7 @@
              }            
             @media all and (min-width: 481px) and (max-width: 568px) {
                  html, body {
-                 max-width: 552px;
+                 max-width: 568px;
                  font-size: 0.8rem; 
                  }
                 .background {
@@ -150,7 +150,7 @@
              }
              @media all and (min-width: 569px) and (max-width: 768px) {
                  html, body {
-                 max-width: 764px;
+                 max-width: 768px;
                  font-size: 0.8rem; 
                  }
                 .background {
@@ -221,7 +221,7 @@
              }
              @media all and (min-width: 241px) and (max-width: 320px) {
                  html, body {
-                     max-width: 303px;
+                     max-width: 320px;
                      font-size: 0.6rem;
                  }
                  .background {
@@ -293,7 +293,7 @@
              }
               @media all and (min-width: 321px) and (max-width: 480px) {
                  html, body {
-                     max-width: 464px;
+                     max-width: 480px;
                      font-size: 0.8rem;
                  }
                  .background {
@@ -436,7 +436,7 @@
              }
              @media all and (min-width: 1025px) and (max-width: 1280px) {
                  html, body {
-                     max-width: 1264px;
+                     max-width: 1280px;
                      font-size: 1rem; 
                  }
                 .background {
@@ -479,12 +479,12 @@
              }
              @media all and (min-width: 1281px) and (max-width: 1366px) {
                  html, body {
-                     max-width: 1349px;
+                     max-width: 1366px;
                  }                
              }
              @media all and (min-width: 1367px) and (max-width: 1440px) {
                  html, body {
-                     max-width: 1420px;
+                     max-width: 1440px;
                      font-size: 1.5rem; 
                  }
                 .background {
@@ -527,9 +527,8 @@
              }
              @media all and (min-width: 1441px) and (max-width: 1600px) {
                  html, body {
-                     max-width: 1594px;
+                     max-width: 1600px;
                      font-size: 1.55rem;
-                 }
                  }
                 .background {
                      min-height: 1020px;
@@ -572,25 +571,95 @@
              }
              @media all and (min-width: 1601px) and (max-width: 1680px) {
                  html, body {
-                     max-width: 1600px;
-                     font-size: 1.225rem;
+                     max-width: 1680px;
+                     font-size: 1.6rem;
+                 }
+                .background {
+                     min-height: 1020px;
+                     background-size: contain;
+                     margin-bottom: 0;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                     height: 81px;
+                 }
+                 h1 {
+                     font-size: 3rem;
+                 }
+                 h2 {
+                     margin-top: 40px;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     height: 600px;
+                 }
+                 .continue, .ending {
+                     height: 900px;
+                 }
+                 .calculator {
+                     height: 600px;
+                 }
+                 h3 {
+                     padding-top: 20px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 40px;
+                    font-size: 1.9em;
+                 }
+                 input[type = "submit"] {
+                     width: 200px;
+                     height: 60px;
+                     margin-top: 40px;
+                     margin-bottom: 20px;
                  }
              }
-             @media all and (min-width: 1680px) and (max-width: 1920px) {
+             @media all and (min-width: 1681px) and (max-width: 1920px) {
                  html, body {
-                     max-width: 1820px;
-                     font-size: 1.4rem;
+                     max-width: 1920px;
+                     font-size: 1.8rem;
                  }
-             }
-             @media all and (min-width: 1920px) and (max-width: 2048px) {
-                 html, body {
-                     max-width: 1928px;
-                     font-size: 1.5rem;
+                .background {
+                     min-height: 1080px;
+                     background-size: contain;
+                     margin-bottom: 30px;
                  }
-             }
-             @media all and (min-width: 2048px) and (max-width: 2560px) {
-                 html, body {
-                     max-width: 2420px;
-                     font-size: 1.87rem;
+                 button {
+                     font-size: 0.9rem;
+                     height: 81px;
+                 }
+                 h1 {
+                     font-size: 2.5rem;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     height: 600px;
+                 }
+                 .continue, .ending {
+                     height: 900px;
+                 }
+                 .calculator {
+                     height: 650px;
+                 }
+                 h3 {
+                     padding-top: 20px;
+                 }
+                 article p {
+                     font-size: 1.05rem;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 40px;
+                    font-size: 1.9em;
+                 }
+                 input[type = "submit"] {
+                     width: 200px;
+                     height: 60px;
+                     margin-top: 40px;
+                     margin-bottom: 20px;
                  }
              }

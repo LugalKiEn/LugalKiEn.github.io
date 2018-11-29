@@ -570,7 +570,7 @@
                      margin-bottom: 20px;
                  }
              }
-             @media all and (min-width: 1600px) and (max-width: 1680px) {
+             @media all and (min-width: 1601px) and (max-width: 1680px) {
                  html, body {
                      max-width: 1600px;
                      font-size: 1.225rem;

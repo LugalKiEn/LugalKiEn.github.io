@@ -528,7 +528,45 @@
              @media all and (min-width: 1441px) and (max-width: 1600px) {
                  html, body {
                      max-width: 1540px;
-                     font-size: 1.17rem;
+                     font-size: 1.6rem;
+                 }
+                 }
+                .background {
+                     min-height: 960px;
+                     background-size: contain;
+                     margin-bottom: -30px;
+                 }
+                 button {
+                     font-size: 0.9rem;
+                     height: 81px;
+                 }
+                 h1 {
+                     font-size: 2.5rem;
+                 }
+                 .beginning, .continue, .ending, .calculator {
+                     height: 600px;
+                 }
+                 .continue, .ending {
+                     height: 900px;
+                 }
+                 .calculator {
+                     height: 450px;
+                 }
+                 h3 {
+                     padding-top: 20px;
+                 }
+                 .calculator p, label {
+                     font-size: 1.2rem;
+                 }
+                 input[type="number"] {
+                    margin: 10px 0;
+                    height: 30px;
+                    font-size: 1.75em;
+                 }
+                 input[type = "submit"] {
+                     width: 150px;
+                     height: 38px;
+                     margin-bottom: 20px;
                  }
              }
              @media all and (min-width: 1600px) and (max-width: 1680px) {
